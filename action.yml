@@ -1,0 +1,12 @@
+name: "Publish collection to ansible galaxy"
+description: "tbd"
+inputs:
+  galaxy_token:
+    description: "Ansible galaxy token to use"
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.galaxy_token }}
