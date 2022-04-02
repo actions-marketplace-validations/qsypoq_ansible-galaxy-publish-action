@@ -4,9 +4,13 @@ inputs:
   galaxy_token:
     description: "Ansible galaxy token to use"
     required: true
-
+  galaxy_server:
+    description: 'Galaxy server you want to push to'
+    required: false
+    default: 'https://galaxy.ansible.com'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.galaxy_token }}
+    - ${{ inputs.galaxy_server }}
