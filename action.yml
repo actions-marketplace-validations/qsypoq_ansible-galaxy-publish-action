@@ -1,5 +1,5 @@
 name: "Publish collection to Ansible Galaxy"
-description: "tbd"
+description: "Publish collection to Ansible Galaxy"
 inputs:
   galaxy_token:
     description: "Ansible galaxy token to use"
