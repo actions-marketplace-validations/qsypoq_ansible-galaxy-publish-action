@@ -1,4 +1,4 @@
-name: "Publish collection to ansible galaxy"
+name: "Publish collection to Ansible Galaxy"
 description: "tbd"
 inputs:
   galaxy_token:
