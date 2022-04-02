@@ -8,6 +8,9 @@ inputs:
     description: 'Galaxy server you want to push to'
     required: false
     default: 'https://galaxy.ansible.com'
+branding:
+  icon: 'chevrons-right'  
+  color: 'black'
 runs:
   using: 'docker'
   image: 'Dockerfile'
